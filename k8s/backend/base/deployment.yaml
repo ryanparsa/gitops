@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend-app
-        image: my-backend-image:latest  # Replace with your image
+        image: nginx:latest
         ports:
         - containerPort: 8080
         envFrom:

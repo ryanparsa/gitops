@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/ryanparsa/gitops.git'
     targetRevision: HEAD
-    path: 'projects/frontend/prod'
+    path: 'k8s/frontend/prod'
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: frontend-prod
