@@ -8,4 +8,4 @@ resources:
 
 images:
   - name: nginx
-    newTag: alpine3.20
+    newTag: alpine
