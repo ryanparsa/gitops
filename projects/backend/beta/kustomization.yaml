@@ -4,15 +4,13 @@ kind: Kustomization
 namespace: backend-beta  # Namespace for the beta environment
 
 resources:
-  - ../../base/deployment.yaml
-  - ../../base/service.yaml
-  - ../../base/configmap.yaml
-  - ../../base/secret.yaml
-  - ../../base/ingress.yaml
-  - ../../base/security-context.yaml
-  - ../../base/network-policy.yaml
-  - ../../base/role.yaml
-  - ../../base/rolebinding.yaml
+  - ../base/deployment.yaml
+  - ../base/service.yaml
+  - ../base/configmap.yaml
+  - ../base/secret.yaml
+  - ../base/ingress.yaml
+  - ../base/network-policy.yaml
+  - ../base/role.yaml
 
 
 images:
