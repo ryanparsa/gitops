@@ -1,19 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: backend-prod # Namespace for the prod environment
+namespace: backend-prod
 
 resources:
-  - ../../base/deployment.yaml
-  - ../../base/service.yaml
-  - ../../base/configmap.yaml
-  - ../../base/secret.yaml
-  - ../../base/ingress.yaml
-  - ../../base/security-context.yaml
-  - ../../base/network-policy.yaml
-  - ../../base/role.yaml
-  - ../../base/rolebinding.yaml
+  - ../../base
 
 images:
-  - name: my-backend-image # Image name as defined in deployment.yaml
-    newTag: v1.0.0 # Prod-specific version tag
+  - name: nginx
+    newTag: alpine3
