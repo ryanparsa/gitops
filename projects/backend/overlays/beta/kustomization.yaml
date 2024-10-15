@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: backend-beta  
+
+resources:
+  - ../../base
+
+images:
+  - name: my-backend-image  # Image name as defined in deployment.yaml
+    newTag: v1.0.0-beta     # Beta-specific version tag
