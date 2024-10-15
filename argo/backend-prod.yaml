@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: "https://github.com/ryanparsa/gitops.git"
     targetRevision: HEAD
-    path: "gitops-repo/backend/overlays/prod"
+    path: 'projects/backend/prod' 
   destination:
     server: "https://kubernetes.default.svc"
     namespace: backend-prod

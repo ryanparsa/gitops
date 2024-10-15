@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: frontend-beta
+  name: frontend-prod
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: 'https://github.com/ryanparsa/gitops.git'
     targetRevision: HEAD
-    path: 'frontend/overlays/beta'
+    path: 'projects/frontend/prod'
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: frontend-beta
+    namespace: frontend-prod
   syncPolicy:
     automated:
       prune: true
