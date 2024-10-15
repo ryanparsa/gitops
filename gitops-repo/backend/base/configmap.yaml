@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+data:
+  DATABASE_URI: postgres://user:password@hostname:5432/dbname
+  LOG_LEVEL: debug
